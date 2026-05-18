@@ -1,6 +1,6 @@
 {
-  "name": "pm2-logrotate",
-  "version": "3.0.0",
+  "name": "@kk/pm2-logrotate",
+  "version": "1.0.1",
   "description": "Module to rotate logs of every pm2 application",
   "main": "app.js",
   "dependencies": {
@@ -31,10 +31,10 @@
     }
   ],
   "config": {
-    "max_size": "10M",
+    "max_size": "350M",
     "retain": "30",
-    "compress": false,
-    "dateFormat": "YYYY-MM-DD_HH-mm-ss",
+    "compress": true,
+    "dateFormat": "YYMMDD_HHmmss",
     "workerInterval": "30",
     "rotateInterval": "0 0 * * *",
     "rotateModule": true
